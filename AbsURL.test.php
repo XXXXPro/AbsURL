@@ -22,7 +22,8 @@ class AbsURLTest extends PHPUnit_Framework_TestCase {
         array('styles/all.css','http://xpro.su?test=1#test','http://xpro.su/styles/all.css'),
         array('','http://xpro.su?test=1#test','http://xpro.su/?test=1#test'),
         array('/','http://xpro.su?test=1#test','http://xpro.su/'),
-        array('/','http://xpro.su:83?test=1#test','http://xpro.su:83/')
+        array('/','http://xpro.su:83?test=1#test','http://xpro.su:83/'),
+        array('all.min.css','http://xpro.su:83/skins/4xpro/','http://xpro.su:83/skins/4xpro/all.min.css')
       );
    }
 }

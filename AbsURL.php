@@ -57,7 +57,7 @@ class AbsURL {
         $prev_changed = true;
       }
       else {
-        $path=dirname($basep['path']);
+        $path=dirname($basep['path'].'.');
         if ($path!=='/' && $path!=='\\') $path.='/';
         $path.=$relp['path'];
         $prev_changed = true;
@@ -78,3 +78,5 @@ class AbsURL {
     return $result;
   }
 }
+
+AbsURL::build('all.min.css','http://xpro.su:83/skins/4xpro/');
