@@ -78,5 +78,3 @@ class AbsURL {
     return $result;
   }
 }
-
-AbsURL::build('all.min.css','http://xpro.su:83/skins/4xpro/');
